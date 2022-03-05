@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    font-weight: 200;
+    width: 480px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1,h2{
+    font-size: 30px;
+}
+
+h3{
+    color: var(--Very-Dark-Blue);
+    font-size: 1.3rem;
+}
+
+img{
+    display: block;
+    width:64px;
+}
+
+.container{
+    background-color: var(--Very-Light-Gray);
+    padding: 6em 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+    font-weight: 200;
+}
+
+.main_header h2{
+    margin-bottom: 1em;
+}
+
+.main_header {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-div{
+    margin: 6em 0em 5em;
+}
+
+h2{
+    font-weight: 600;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .4em;
+    text-align: left;
+    padding: 2em;
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.card > img{
+    align-self: flex-end;
+    justify-self: end;
+}
+
+.section-A{
+    border-top: .5em solid var(--Blue);
+}
+
+.section-B{
+    border-top: .5em solid var(--Red);
+}
+
+.section-C{
+    border-top: .5em solid var(--Cyan); 
+}
+
+.section-D{
+    border-top: .5em solid var(--Orange);
+}
+
+@media(min-width: 600px){
+    body{
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .flex{
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex > *{
+        flex: 1;
+    }
+
+    .card{
+        margin-bottom: 0em;
+    }
+
+    .main_header > p{
+        max-width: 35ch;
+    }
+
+    .middle-div{
+        display: grid;
+        gap: 2em;
+
+    }
+
+    .main_header{
+        text-align: center;
+        padding: 0em 5em;
+    }
+
+    .section-C{
+        grid-row: 2 / 3;
+    }
+}
